@@ -6,4 +6,6 @@ use Symfony\Component\Console\Application;
 
 $application = new Application('git_learn_application');
 
+$application->add(new App\Repeater);
+
 $application->run();
