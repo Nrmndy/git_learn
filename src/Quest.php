@@ -17,7 +17,7 @@ class Quest extends Command
 	protected function configure(): void
     {
         $this
-            ->setHelp('This collects info about you and outputs it in console.')
+            ->setHelp('This command collects info about you and outputs it in console.')
         ;
     }
 
