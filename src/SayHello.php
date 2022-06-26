@@ -11,12 +11,12 @@ use Symfony\Component\Console\Input\InputArgument;
 class SayHello extends Command
 {
     protected static $defaultName = 'say_hello';
-	
-	protected function configure(): void
+
+    protected function configure(): void
     {
         $this
             ->setHelp('This command says Hello to your Input')
-			->addArgument('userInput', InputArgument::REQUIRED, 'The Input to say hello to.')
+            ->addArgument('userInput', InputArgument::REQUIRED, 'The Input to say hello to.')
         ;
     }
 
