@@ -16,13 +16,12 @@ class SayHello extends Command
     {
         $this
             ->setHelp('This command says Hello to your Input')
-            ->addArgument('userInput', InputArgument::REQUIRED, 'The Input to say hello to.')
-        ;
+            ->addArgument('userInput', InputArgument::REQUIRED, 'The Input to say hello to.');
     }
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        $output->writeln('Привет '.$input->getArgument('userInput'));
+        $output->writeln('Привет ' . $input->getArgument('userInput'));
         return Command::SUCCESS;
     }
 }
